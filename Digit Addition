@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+int main() {
+    int n,a,b,c,sum; // a :- first digit    b :- last digit    c :- temp
+    printf("Enter any Number :- "); // n :- inputted number
+    scanf("%d",&n);
+    b=n%10;
+    for(c=n;c>=10;) {
+        c=c/10;
+    }
+    a=c;
+    sum = a + b;
+    printf("Total Number of Digits :- %d\n",sum);
+    getch();
+}
